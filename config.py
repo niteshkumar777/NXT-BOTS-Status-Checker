@@ -1,5 +1,3 @@
-import os
-
 TIME_ZONE = 
 BOT_LIST = 
 CHANNEL_ID = 
