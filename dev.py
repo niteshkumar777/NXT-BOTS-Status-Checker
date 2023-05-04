@@ -12,9 +12,9 @@ from config import *
 
 app = Client(
     name = "devbotz",
-    api_id = config.API_ID,
-    api_hash = config.API_HASH,
-    session_string = config.SESSION
+    api_id = API_ID,
+    api_hash = API_HASH,
+    session_string = SESSION
 )
 
 async def main_devchecker():
