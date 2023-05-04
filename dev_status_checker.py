@@ -14,7 +14,7 @@ app = Client(
     name = "devbotz",
     api_id = config.API_ID,
     api_hash = config.API_HASH,
-    session_string = config.STRING
+    session_string = config.SESSION
 )
 
 async def main_devchecker():
