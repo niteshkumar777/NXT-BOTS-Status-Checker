@@ -12,18 +12,10 @@ from config import *
 
 app = Client(
     name = "devbotz",
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"],
-    session_string = os.environ["SESSION_STRING"]
+    api_id = config.API_ID,
+    api_hash = config.API_HASH,
+    session_string = config.STRING
 )
-
-TIME_ZONE = os.environ["TIME_ZONE"]
-BOT_LIST = [i.strip() for i in os.environ.get("BOT_LIST").split(' ')]
-CHANNEL_ID = int(os.environ["CHANNEL_ID"]) #CHANNEL_ID is for group/channel where checker will update the status.
-MESSAGE_ID = int(os.environ["MESSAGE_ID"])
-BOT_ADMIN_IDS = [int(i.strip()) for i in os.environ.get("BOT_ADMIN_IDS").split(' ')]
-GRP_ID = os.environ.get("GRP_ID") #GRP_ID is for logs group where checker will send warnings of offline bots.
-
 
 async def main_devchecker():
     async with app:
