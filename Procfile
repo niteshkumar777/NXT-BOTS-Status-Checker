@@ -1,1 +1,1 @@
-worker: python3 dev_status_checker.py
+worker: python3 dev.py
